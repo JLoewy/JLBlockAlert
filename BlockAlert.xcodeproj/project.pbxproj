@@ -21,6 +21,7 @@
 		032F400E1894837C006442A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F3FF01894837C006442A1 /* UIKit.framework */; };
 		032F40161894837C006442A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 032F40141894837C006442A1 /* InfoPlist.strings */; };
 		032F40181894837C006442A1 /* BlockAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 032F40171894837C006442A1 /* BlockAlertTests.m */; };
+		032F40281894856A006442A1 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032F40271894856A006442A1 /* BlockAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		032F40131894837C006442A1 /* BlockAlertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlockAlertTests-Info.plist"; sourceTree = "<group>"; };
 		032F40151894837C006442A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		032F40171894837C006442A1 /* BlockAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockAlertTests.m; sourceTree = "<group>"; };
+		032F40261894856A006442A1 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
+		032F40271894856A006442A1 /* BlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		032F3FF21894837C006442A1 /* BlockAlert */ = {
 			isa = PBXGroup;
 			children = (
+				032F40251894856A006442A1 /* Source */,
 				032F3FFB1894837C006442A1 /* JLAppDelegate.h */,
 				032F3FFC1894837C006442A1 /* JLAppDelegate.m */,
 				032F3FFE1894837C006442A1 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				032F40141894837C006442A1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		032F40251894856A006442A1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				032F40261894856A006442A1 /* BlockAlertView.h */,
+				032F40271894856A006442A1 /* BlockAlertView.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				032F3FFD1894837C006442A1 /* JLAppDelegate.m in Sources */,
+				032F40281894856A006442A1 /* BlockAlertView.m in Sources */,
 				032F40031894837C006442A1 /* JLViewController.m in Sources */,
 				032F3FF91894837C006442A1 /* main.m in Sources */,
 			);
@@ -382,6 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlockAlert/BlockAlert-Prefix.pch";
 				INFOPLIST_FILE = "BlockAlert/BlockAlert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +410,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlockAlert/BlockAlert-Prefix.pch";
 				INFOPLIST_FILE = "BlockAlert/BlockAlert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

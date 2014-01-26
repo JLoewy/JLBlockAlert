@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Jason Loewy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
 @interface JLViewController : UIViewController
 
